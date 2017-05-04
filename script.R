@@ -2,29 +2,25 @@
 
 #source
 source("/Users/wvieira/Documents/GitHub/NativeFunctions/addTransColor.R")
-source("/Users/wvieira/Documents/GitHub/NativeFunctions/MyScatterPlot.R")
 
 #data
   #Bird distribuition
-bd <- read.csv("birdDist.csv")
+bd <- read.csv("allbird_unique.csv")
 names(bd) <- c("names", "lat", "lon")
 
-  #As numeric
-bd$lat <- as.numeric(bd$lat)
-bd$lon <- as.numeric(bd$lon)
-
   #plot
-myplot(bd$lon,
-       bd$lat,
-       pch = 20,
-       pointCex = .5,
-       col = addTrans(ifelse(bd$name == "Black_backed_Woodpecker", "yellow",
-          ifelse(bd$name == "House_Wren","Brown",
-          ifelse(bd$name == "Lewis_Woodpecker","#0f9200",
-          ifelse(bd$name == "Mountain_Bluebird","blue", "gray"
+#par(mfrow = c(2,2))
+plot(bd$lon,
+     bd$lat,
+     cex = .5,
+     pch = 16,
+     col = addTrans(ifelse(bd$name == "Mountain_Bluebird", "blue",
+        ifelse(bd$name == "House_Wren","Brown",
+        ifelse(bd$name == "Lewis_Woodpecker","#0f9200",
+        ifelse(bd$name == "Black_backed_Woodpecker","yellow", "gray"
 )))), 100),
-     xlab = "",
-     ylab = ""
+   xlab = "",
+   ylab = "",
 )
 
   #Climate data
