@@ -11,12 +11,12 @@ library(raster)
 lu <- raster("vegType/LCType.tif")
 
 #axis limits
-xlim <- c(-124.8 - 3, -114.0 + 3)
+xlim <- c(-124.8 - 3, -114.0 + 3) #add a buffer of 3 to the rectangle cutout
 ylim <- c(32.47 - 3, 42 + 3)
 
 #cropping layer
 cropl <- extent(xlim, ylim)
 luCrop <- crop(lu, cropl)
-writeRaster(luCrop, filename = "LCType", format ='ascii', overwrite = T, na.value = -9999, datatype = "FLT4S")
+writeRaster(luCrop, filename = "LCType", format ='ascii', overwrite = T, na.value = -9999, datatype = "FLT4S") #where is the FLT4S datatype? its if no data type was specified, FLT4s is the default
 
 plot(luCrop)
