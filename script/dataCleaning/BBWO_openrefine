@@ -1,0 +1,222 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column EFFORT_AREA_HA",
+    "columnName": "EFFORT_AREA_HA"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column NUMBER_OBSERVERS",
+    "columnName": "NUMBER_OBSERVERS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column EFFORT_DISTANCE_KM",
+    "columnName": "EFFORT_DISTANCE_KM"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DURATION_MINUTES",
+    "columnName": "DURATION_MINUTES"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ALL_SPECIES_REPORTED",
+    "columnName": "ALL_SPECIES_REPORTED"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column REASON",
+    "columnName": "REASON"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column APPROVED",
+    "columnName": "APPROVED"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column REVIEWED",
+    "columnName": "REVIEWED"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column GROUP_IDENTIFIER",
+    "columnName": "GROUP_IDENTIFIER"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column PROJECT_CODE",
+    "columnName": "PROJECT_CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column PROTOCOL_TYPE",
+    "columnName": "PROTOCOL_TYPE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column LAST_NAME",
+    "columnName": "LAST_NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FIRST_NAME",
+    "columnName": "FIRST_NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column OBSERVER_ID",
+    "columnName": "OBSERVER_ID"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SPECIES_COMMENTS",
+    "columnName": "SPECIES_COMMENTS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TIME_OBSERVATIONS_STARTED",
+    "columnName": "TIME_OBSERVATIONS_STARTED"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TRIP_COMMENTS",
+    "columnName": "TRIP_COMMENTS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column OBSERVATION_DATE",
+    "columnName": "OBSERVATION_DATE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SAMPLING_EVENT_IDENTIFIER",
+    "columnName": "SAMPLING_EVENT_IDENTIFIER"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column LOCALITY_TYPE",
+    "columnName": "LOCALITY_TYPE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column LOCALITY",
+    "columnName": "LOCALITY"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column BCR_CODE",
+    "columnName": "BCR_CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column IBA_CODE",
+    "columnName": "IBA_CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SUBNATIONAL2_CODE",
+    "columnName": "SUBNATIONAL2_CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column COUNTY",
+    "columnName": "COUNTY"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SUBNATIONAL1_CODE",
+    "columnName": "SUBNATIONAL1_CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column STATE_PROVINCE",
+    "columnName": "STATE_PROVINCE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ATLAS_BLOCK",
+    "columnName": "ATLAS_BLOCK"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column COUNTRY",
+    "columnName": "COUNTRY"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column AGE_SEX",
+    "columnName": "AGE_SEX"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SUBSPECIES_SCIENTIFIC_NAME",
+    "columnName": "SUBSPECIES_SCIENTIFIC_NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SUBSPECIES_COMMON_NAME",
+    "columnName": "SUBSPECIES_COMMON_NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column OBSERVATION_COUNT",
+    "columnName": "OBSERVATION_COUNT"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column BREEDING_BIRD_ATLAS_CODE",
+    "columnName": "BREEDING_BIRD_ATLAS_CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column GLOBAL_UNIQUE_IDENTIFIER",
+    "columnName": "GLOBAL_UNIQUE_IDENTIFIER"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TAXONOMIC_ORDER",
+    "columnName": "TAXONOMIC_ORDER"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CATEGORY",
+    "columnName": "CATEGORY"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column COUNTRY_CODE",
+    "columnName": "COUNTRY_CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column LOCALITY_ID",
+    "columnName": "LOCALITY_ID"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SCIENTIFIC_NAME",
+    "columnName": "SCIENTIFIC_NAME"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column COMMON_NAME",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "COMMON_NAME",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Black-backed Woodpecker"
+        ],
+        "to": "Black_backed_Woodpecker"
+      }
+    ]
+  }
+]
