@@ -1,0 +1,357 @@
+[
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ï»¿GLOBAL UNIQUE IDENTIFIER",
+    "columnName": "ï»¿GLOBAL UNIQUE IDENTIFIER"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column LAST EDITED DATE",
+    "columnName": "LAST EDITED DATE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TAXONOMIC ORDER",
+    "columnName": "TAXONOMIC ORDER"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column CATEGORY",
+    "columnName": "CATEGORY"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column COMMON NAME",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "COMMON NAME",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "House Wren"
+        ],
+        "to": "House_Wren"
+      }
+    ]
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SCIENTIFIC NAME",
+    "columnName": "SCIENTIFIC NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SUBSPECIES COMMON NAME",
+    "columnName": "SUBSPECIES COMMON NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SUBSPECIES SCIENTIFIC NAME",
+    "columnName": "SUBSPECIES SCIENTIFIC NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column OBSERVATION COUNT",
+    "columnName": "OBSERVATION COUNT"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column BREEDING BIRD ATLAS CODE",
+    "columnName": "BREEDING BIRD ATLAS CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column AGE/SEX",
+    "columnName": "AGE/SEX"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column COUNTRY",
+    "columnName": "COUNTRY"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column COUNTRY_CODE",
+    "columnName": "COUNTRY_CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column STATE_PROVINCE",
+    "columnName": "STATE_PROVINCE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SUBNATIONAL1_CODE",
+    "columnName": "SUBNATIONAL1_CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column COUNTY",
+    "columnName": "COUNTY"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SUBNATIONAL2_CODE",
+    "columnName": "SUBNATIONAL2_CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column IBA CODE",
+    "columnName": "IBA CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column BCR CODE",
+    "columnName": "BCR CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column USFWS CODE",
+    "columnName": "USFWS CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ATLAS BLOCK",
+    "columnName": "ATLAS BLOCK"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column LOCALITY",
+    "columnName": "LOCALITY"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column LOCALITY ID",
+    "columnName": "LOCALITY ID"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column LOCALITY TYPE",
+    "columnName": "LOCALITY TYPE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column OBSERVATION DATE",
+    "columnName": "OBSERVATION DATE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TIME OBSERVATIONS STARTED",
+    "columnName": "TIME OBSERVATIONS STARTED"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column OBSERVER ID",
+    "columnName": "OBSERVER ID"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column FIRST NAME",
+    "columnName": "FIRST NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column LAST NAME",
+    "columnName": "LAST NAME"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SAMPLING EVENT IDENTIFIER",
+    "columnName": "SAMPLING EVENT IDENTIFIER"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column PROTOCOL TYPE",
+    "columnName": "PROTOCOL TYPE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column PROJECT CODE",
+    "columnName": "PROJECT CODE"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column DURATION MINUTES",
+    "columnName": "DURATION MINUTES"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column EFFORT DISTANCE KM",
+    "columnName": "EFFORT DISTANCE KM"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column EFFORT AREA HA",
+    "columnName": "EFFORT AREA HA"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column NUMBER OBSERVERS",
+    "columnName": "NUMBER OBSERVERS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ALL SPECIES REPORTED",
+    "columnName": "ALL SPECIES REPORTED"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column GROUP IDENTIFIER",
+    "columnName": "GROUP IDENTIFIER"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column APPROVED",
+    "columnName": "APPROVED"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column HAS MEDIA",
+    "columnName": "HAS MEDIA"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column REVIEWED",
+    "columnName": "REVIEWED"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column TRIP COMMENTS",
+    "columnName": "TRIP COMMENTS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column REASON",
+    "columnName": "REASON"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column",
+    "columnName": "Column"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column SPECIES COMMENTS",
+    "columnName": "SPECIES COMMENTS"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 48",
+    "columnName": "Column 48"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 50",
+    "columnName": "Column 50"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 51",
+    "columnName": "Column 51"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 52",
+    "columnName": "Column 52"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 53",
+    "columnName": "Column 53"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 54",
+    "columnName": "Column 54"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 55",
+    "columnName": "Column 55"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 56",
+    "columnName": "Column 56"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 57",
+    "columnName": "Column 57"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 58",
+    "columnName": "Column 58"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 59",
+    "columnName": "Column 59"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 60",
+    "columnName": "Column 60"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 61",
+    "columnName": "Column 61"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 62",
+    "columnName": "Column 62"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 63",
+    "columnName": "Column 63"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 64",
+    "columnName": "Column 64"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 65",
+    "columnName": "Column 65"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 66",
+    "columnName": "Column 66"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 67",
+    "columnName": "Column 67"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 68",
+    "columnName": "Column 68"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 69",
+    "columnName": "Column 69"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 70",
+    "columnName": "Column 70"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column Column 49",
+    "columnName": "Column 49"
+  }
+]
