@@ -1,6 +1,7 @@
 #Birds joints species distribution
 
 #source
+  #Add transparent color
 source("/Users/wvieira/Documents/GitHub/NativeFunctions/addTransColor.R")
 
 #data
@@ -9,7 +10,6 @@ bd <- read.csv("allbird_unique.csv")
 names(bd) <- c("names", "lat", "lon")
 
   #plot
-#par(mfrow = c(2,2))
 plot(bd$lon,
      bd$lat,
      cex = .5,
@@ -18,16 +18,14 @@ plot(bd$lon,
         ifelse(bd$name == "House_Wren","Brown",
         ifelse(bd$name == "Lewis_Woodpecker","#0f9200",
         ifelse(bd$name == "Black_backed_Woodpecker","yellow", "gray"
-)))), 100),
+)))), 80),
    xlab = "",
    ylab = "",
 )
 
   #Climate data
-
 # create the raster layers from all the files in the folder
 #setwd("/Users/wvieira/Documents/GitHub/birdDist/data")
-
 library(rgdal)
 library(raster)
 #data
