@@ -1,4 +1,4 @@
-#Model Running
+#Model Running subseting just sites with present birds
   #Script based in Pollock et al. (2014)
 
 #setting working directory
@@ -11,20 +11,19 @@ if(length(packages.needed)) install.packages(packages.needed)
 #data
 setwd("/Users/wvieira/Documents/GitHub/birdDist/")
 dat <- read.csv("data/birdDist/Bird_presence_absence.csv")
-dat$landuse <- as.factor(dat$landuse) #tansfor landuse to factor
 str(dat)
 
   #subseting data
-dat.s <- dat[!(dat$MOCH==0 & dat$MOBL==0 & dat$LEWO==0 & dat$BBMW==0),]
-str(dat.s)
+sub.data <- dat[!(dat$MOCH == 0 & dat$MOBL == 0 & dat$LEWO == 0 & dat$BBMW == 0),]
+str(sub.data)
 
   #matrix
 #for the enviromental data, we are using just temp. and pres. (without landuse)
-X <- as.matrix(dat.s[,c(4, 5)]) #enviromental data
+X <- as.matrix(sub.data[,c(4, 5, 11: 17)]) #enviromental data
 str(X)
 n_env_vars <- dim(X)[2] #number of enviromental variables
 
-Occur <- as.matrix(dat.s[,c(7:10)]) #species
+Occur <- as.matrix(sub.data[,c(7:10)]) #species
 str(Occur)
 n_species <- dim(Occur)[2]
 
@@ -51,9 +50,11 @@ model_name <- 'sim_model'
 # - Beta (regression coefficients)
 # - Mu (predicted probability of occurrence at a site)
 #These four objects will be loaded into the R workspace when the script has finished running.
+setwd(paste(getwd(), "/script/model", sep = ""))
 source("fit_JSDM.R")
 
 #Running the model to mensure time consuming
+setwd(paste(getwd(), "/script/model", sep = ""))
 library(profvis)
 p <- profvis({
 source("fit_JSDM.R")
