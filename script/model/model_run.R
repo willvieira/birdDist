@@ -11,14 +11,14 @@ if(length(packages.needed)) install.packages(packages.needed)
 #Simulating enviromental data
 #2 environmental variables and 500 sites
 n_env_vars <- 2
-n_sites <- 500
+n_sites <- 3404
 X <- matrix(rnorm(n_sites * n_env_vars), ncol=n_env_vars)
 head(X)
 
 #Simulating matrix of species response to environmental data (8 species)
 # Coef will have 3 colums, the first column of the matrix coefs are the species intercept terms
 # that will influence the prevalence of each species. The other two are the variables
-n_species <- 8
+n_species <- 4
 coefs <- matrix(runif(n_species * (n_env_vars + 1), -1, 1), ncol=n_env_vars + 1)
 coefs
 
@@ -41,7 +41,7 @@ n.thin <- 40
 df <- 1
 
 #Choose the name for the model
-model_tesst <- 'sim_model'
+model_name <- 'sim_model'
 
 #Source the model
 #The model estimates posterior distributions for four key parameters:
@@ -51,3 +51,14 @@ model_tesst <- 'sim_model'
 # - Mu (predicted probability of occurrence at a site)
 #These four objects will be loaded into the R workspace when the script has finished running.
 source("fit_JSDM.R")
+
+#Running the model to mensure time consuming
+library(profvis)
+p <- profvis({
+source("fit_JSDM.R")
+})
+#save time results as html
+htmlwidgets::saveWidget(p, "profile.html")
+
+# Open time results in browser from R
+browseURL("profile.html")
