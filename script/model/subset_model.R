@@ -14,12 +14,12 @@ dat <- read.csv("data/birdDist/Bird_presence_absence.csv")
 str(dat)
 
   #subseting data
-sub.data <- dat[!(dat$MOCH == 0 & dat$MOBL == 0 & dat$LEWO == 0 & dat$BBMW == 0),]
+sub.data <- dat[!(dat$MOCH == 0 & dat$MOBL == 0 & dat$LEWO == 0 & dat$BBWO == 0),]
 str(sub.data)
 
   #matrix
 #for the enviromental data, we are using just temp. and pres. (without landuse)
-X <- as.matrix(sub.data[,c(4, 5, 11: 17)]) #enviromental data
+X <- as.matrix(sub.data[,c(4, 5, 11: 23)]) #enviromental data
 str(X)
 n_env_vars <- dim(X)[2] #number of enviromental variables
 
@@ -31,13 +31,13 @@ n_species <- dim(Occur)[2]
 #to run, n.chains, the number of iterations per chain, n.iter, how many samples to discard as
 #burn-in, n.burn, and the factor to thin the post-burn-in samples by, n.thin.
 n.chains <- 3
-n.iter <- 2000
+n.iter <- 1000
 n.burn <- 50
-n.thin <- 5
+n.thin <- 10
 
 #Choose the degrees of freedom for the correlation matrix
 # Important to remember that increasing the degrees of freedom is assigning greater weight,
-# in the priors for the correlation coefficients, on values closer to zero
+# in the priors for the correlation coefficients,R on values closer to zero
 df <- 1
 
 #Choose the name for the model
@@ -57,7 +57,7 @@ source("fit_JSDM.R")
 setwd(paste(getwd(), "/script/model", sep = ""))
 library(profvis)
 p <- profvis({
-source("fit_JSDM.R")
+sim1 <- source("fit_JSDM.R")
 })
 #save time results as html
 htmlwidgets::saveWidget(p, "profile.html")
