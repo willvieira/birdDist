@@ -1,4 +1,9 @@
+
 # results
+
+#setwd("/Users/wvieira/Documents/GitHub/birdDist/results/")
+setwd("C:/Users/kvieka/Documents/NIBIO/kurs/EcologicalDatasynthesis/JSDM_course_project/results")
+model <- load("sim1.Rdata")
 
 library(lattice)
 
@@ -16,5 +21,5 @@ SUMMARY(Rho, sd)
 
 #save results
 sim1 <- list(Beta, Rho, EnvRho, Mu)
-setwd("/Users/wvieira/Documents/GitHub/birdDist/results/")
+
 save(sim1, file = "sim1")

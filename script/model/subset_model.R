@@ -1,6 +1,8 @@
 #Model Running subseting just sites with present birds
   #Script based in Pollock et al. (2014)
 
+# Subset model because only for sites where at least one sp has been observed
+
 #setting working directory
 setwd(paste(getwd(), "/script/model", sep = ""))
 
