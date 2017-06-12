@@ -2,7 +2,9 @@
   #Script based in Pollock et al. (2014)
 
 #setting working directory
+#setwd("C:/Users/kvieka/Documents/GitHub/birdDist")
 setwd(paste(getwd(), "/script/model", sep = ""))
+
 
 #packages
 packages.needed <- setdiff(c('R2jags', 'MASS', 'MCMCpack', 'abind', 'random', 'mclust'),rownames(installed.packages()))
